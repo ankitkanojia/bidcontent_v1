@@ -53,31 +53,32 @@ class Current extends Component {
             "<br/><br/>Kindly revert for further communication.",
             "<br/><br/>I look forward to your response.",
             "<br/><br/>If you would be interested in, I`d love to hear from you.",
-            "<br/><br/>If you want to collaborate with me lets discuss it in more details over the chat.",
+            "<br/><br/>If you want to collaborate with me lets discuss it in more detail over the chat.",
             "<br/><br/>Send me a quick message so that we can discuss more over the chat.",
-            "<br/><br/>Looking forward from your end.",
+            "<br/><br/>Looking forward to your end.",
             "<br/><br/>I will be more than happy to help you. Let me share more details about your project.",
             "<br/><br/>I can start your project immediately and look forward to working with you.",
             "<br/><br/>I look forward to the Opportunity to work with you.",
             "<br/><br/>I look forward to hearing back from you!",
-            "<br/><br/>We can talk on freelancer chat box for a detailed discussion and I can start immediately upon your decision.",
-            "<br/><br/>Awaiting for your positive response to discuss in details and start immediately.",
-            "<br/><br/>I will wait for your reply so that we can discuss all details.",
+            "<br/><br/>We can talk on a freelancer chat box for a detailed discussion and I can start immediately upon your decision.",
+            "<br/><br/>Awaiting for your positive response to discuss in detail and start immediately.",
+            "<br/><br/>I will wait for your reply so that we can discuss all the details.",
             "<br/><br/>I look forward to speaking with you about this opportunity.",
-            "<br/><br/>Let's get connect via freelancer chat box for further discussion.",
+            "<br/><br/>Let's get connected via a freelancer chat box for further discussion.",
             "<br/><br/>Eagerly waiting for your response to move forward soon.",
-            "<br/><br/>I am ready to discuss more about this opportunity in details and we deliver excellent support as well as service to fulfill your expectation.",
+            "<br/><br/>I am ready to discuss more this opportunity in details and we deliver excellent support as well as service to fulfill your expectations.",
             "<br/><br/>Kindly give us an opportunity to work for you at our best."
         ];
 
-        const portfolio = " Please have a look at my Portfolio, <br/> \nhttps://www.freelancer.in/u/Weborchid"; //If you wish I can send you more work on your request.
-        const portfolioLink = "<br/>Have a look to my recent work. If you wish I can send you more work on your request. <br/><br/>" +
-            "https://ayurvedoncall.com <br/>" +
-            "http://www.ibtcfp.com <br/>" +
+        const portfolio = "Please have a look at my Portfolio, <br/> \nhttps://www.freelancer.in/u/Weborchid"; //If you wish I can send you more work on your request.
+        const portfolioLink = "<br/>Have a look at my recent work. If you wish I can send you more work on your request. <br/><br/>" +
+            "https://exam-preparation.com <br/>" +
             "https://www.avancedentalcare.com <br/>" +
             "https://www.vspaces.co <br/>" +
-            "https://riowebs-ibitcoin.herokuapp.com";
-        const thankyou = "<br/><br/>Thanks You! Have a great day!";
+            "https://ibitcoin.herokuapp.com/ <br/>" +
+            "http://www.ibtcfp.com <br/>" +
+            "https://ayurvedoncall.com";
+        const thankyou = "<br/><br/>Thank You! Have a great day!";
         const hireMe = "<br/><br/> Hire me: https://www.freelancer.in/u/Weborchid";
 
 
