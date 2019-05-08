@@ -37,14 +37,14 @@ class Current extends Component {
         ev.preventDefault();
         let bidDeascription = "Hi there,<br/>Greetings from Riowebs!";
         const understanding = [
-            "<br/><br/>I have read all the requirements and SUMMARIZE the further details related to your job.",
+            "<br/><br/>I have read all the requirements and SUMMARIZE further details related to your job.",
             "<br/><br/>I have read all the requirements and I am assured that I can complete your project on time and within your budget.",
             "<br/><br/>I have gone through your project description and I am very much excited to work with you on your project.",
             "<br/><br/>I have entirely understood your requirements and so felt the desire to develop it for you.",
             "<br/><br/>I read through the job details extremely carefully and I am absolutely sure that I can do the project very well.",
             "<br/><br/>I read through the job details extremely carefully and I can achieve the results that you are asking for.",
-            "<br/><br/>I have read the all the requirements and I am assured that I will build you a website with a modern design that renders properly on all major web browsers.",
-            "<br/><br/>I have read all the requirements and SUMMARIZE the further details related to your job. I will assure that you`ll get all the expected stuff like a great professional service and a fast turnaround, at a bit less and I get a bit more exposure."
+            "<br/><br/>I have read all the requirements and I am assured that I will build you a website with a modern design that renders properly on all major web browsers.",
+            "<br/><br/>I have read all the requirements and SUMMARIZE further details related to your job. I will assure that you`ll get all the expected stuff like a great professional service and a fast turnaround, at a bit less and I get a bit more exposure."
         ];
         const similar = "<br/>I have worked on similar projects to what you are looking for, and I am confident I can exceed your expectations.";
         const workFlow = "<br/>Our approach in your project is to start with following way, \nPROPOSAL → DESIGN → DEVELOPMENT → AUTOMATION TESTING → FIXES/UPDATION → LIVE";
@@ -70,7 +70,7 @@ class Current extends Component {
             "<br/><br/>Kindly give us an opportunity to work for you at our best."
         ];
 
-        const portfolio = "Please have a look at my Portfolio, <br/> \nhttps://www.freelancer.in/u/Weborchid"; //If you wish I can send you more work on your request.
+        const portfolio = " Please have a look at my Portfolio, <br/> \nhttps://www.freelancer.in/u/Weborchid"; //If you wish I can send you more work on your request.
         const portfolioLink = "<br/>Have a look at my recent work. If you wish I can send you more work on your request. <br/><br/>" +
             "https://exam-preparation.com <br/>" +
             "https://www.avancedentalcare.com <br/>" +
