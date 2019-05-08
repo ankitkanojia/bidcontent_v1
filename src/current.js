@@ -91,9 +91,9 @@ class Current extends Component {
             lookingFor = 'logo design';
         }
         if (this.state.chkSingleTeam === "1") { //Single HERE
-            title = "<br/> <br/>You’re looking for a " + lookingFor + ", this is exactly what I specialise in. I have " + (this.state.chkWebAppLogo === "3" ? '5+' : '9+') + " years of experience in " + (this.state.chkWebAppLogo === "3" ? 'Graphics & Logo Design.' : 'IT Sector.');
+            title = "<br/> <br/>You’re looking for a " + lookingFor + ", this is exactly what I specialize in. I have " + (this.state.chkWebAppLogo === "3" ? '5+' : '9+') + " years of experience in " + (this.state.chkWebAppLogo === "3" ? 'Graphics & Logo Design.' : 'the IT Sector.');
         } else { //Team HERE
-            title = "<br/> <br/>You’re looking for a " + lookingFor + ", this is exactly what I specialise in. I have 9+ years of experience team of " + (this.state.chkWebAppLogo === "3" ? 'highly skilled Designers' : 'Adept Coders\'') + ".";
+            title = "<br/> <br/>You’re looking for a " + lookingFor + ", this is exactly what I specialize in. I have 9+ years of experience team of " + (this.state.chkWebAppLogo === "3" ? 'highly skilled Designers' : 'Adept Coders\'') + ".";
         }
         bidDeascription += title;
         //END:Title
