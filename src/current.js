@@ -35,7 +35,7 @@ class Current extends Component {
     postData(ev) {
         //Form post HERE
         ev.preventDefault();
-        let bidDeascription = "Hi there,<br/>Greetings from Riowebs!";
+        let bidDeascription = "Hello there,<br/>Greetings from Riowebs!";
         const understanding = [
             "<br/><br/>I have read all the requirements and SUMMARIZE further details related to your job.",
             "<br/><br/>I have read all the requirements and I am assured that I can complete your project on time and within your budget.",
@@ -72,12 +72,13 @@ class Current extends Component {
 
         const portfolio = " Please have a look at my Portfolio, <br/> \nhttps://www.freelancer.in/u/Weborchid"; //If you wish I can send you more work on your request.
         const portfolioLink = "<br/>Have a look at my recent work. If you wish I can send you more work on your request. <br/><br/>" +
-            "https://exam-preparation.com <br/>" +
-            "https://www.avancedentalcare.com <br/>" +
+            "https://www.avancedentalcare.com  <br/>" +
+            "https://exam-preparation.com  <br/>" +
             "https://www.vspaces.co <br/>" +
-            "https://ibitcoin.herokuapp.com/ <br/>" +
-            "http://www.ibtcfp.com <br/>" +
-            "https://ayurvedoncall.com";
+            "http://bosskinds.com <br/>" +
+            "https://ayurvedoncall.com <br/>" +
+            "https://ibitcoin.herokuapp.com <br/>" +
+            "http://www.ibtcfp.com ";
         const thankyou = "<br/><br/>Thank You! Have a great day!";
         const hireMe = "<br/><br/> Hire me: https://www.freelancer.in/u/Weborchid";
 
