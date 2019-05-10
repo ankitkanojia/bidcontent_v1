@@ -166,7 +166,7 @@ class Current extends Component {
             //Replace Profile URL
             bidDeascription = bidDeascription.replace('https://www.freelancer.in/u/Weborchid', 'https://www.fiverr.com/riowebs');
             //Replace Word
-            bidDeascription = bidDeascription.replace('freelancer', 'fiverr')
+            bidDeascription = bidDeascription.replace('Freelancer', 'Fiverr')
         }
 
         this.setState({resultdata: bidDeascription});
