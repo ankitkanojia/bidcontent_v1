@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1ada14d0-0675-40e9-b1e6-dcaf045b6870" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/current.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/current.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -14,7 +15,21 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/current.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="344" column="109" lean-forward="true" selection-start-line="344" selection-start-column="109" selection-end-line="344" selection-end-column="109" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+                <element signature="e#15188#18027#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -38,6 +53,8 @@
       <find>speli</find>
       <find>it</find>
       <find>fiverr</find>
+      <find>hire</find>
+      <find>chkHireMe</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -72,12 +89,35 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="bidcontent_v1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bidcontent_v1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bidcontent_v1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bidcontent_v1" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bidcontent_v1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bidcontent_v1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="S:/react.js/instarep-app" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -90,11 +130,11 @@
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="S:\github repository\reactbidcontent\public" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="S:\github repository\reactbidcontent\src" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="S:\github repository\reactbidcontent\public" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -158,16 +198,19 @@
       <workItem from="1557727938754" duration="8000" />
       <workItem from="1557803967380" duration="733000" />
       <workItem from="1557896006358" duration="658000" />
+      <workItem from="1561090970454" duration="577000" />
+      <workItem from="1562762332291" duration="537000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46094000" />
+    <option name="totallyTimeSpent" value="47208000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.14583333" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14583333" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -210,16 +253,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.css" />
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -285,12 +318,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/current.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="171" column="53" lean-forward="true" selection-start-line="171" selection-start-column="53" selection-end-line="171" selection-end-column="53" />
+        <state relative-caret-position="230">
+          <caret line="344" column="109" lean-forward="true" selection-start-line="344" selection-start-column="109" selection-end-line="344" selection-end-column="109" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#15188#18027#0" />
           </folding>
         </state>
       </provider>

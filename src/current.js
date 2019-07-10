@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Header from './components/header';
 import {FormGroup, Label, Input} from 'reactstrap';
 
+
 class Current extends Component {
 
     constructor(props) {
@@ -18,7 +19,8 @@ class Current extends Component {
             chkFiverr: false,
             chkHireMe: false,
             suffleUnderstanding: '',
-            shuffleRevert:''
+            shuffleRevert: '',
+            chkScopeDoc: false,
         };
     }
 
@@ -81,7 +83,7 @@ class Current extends Component {
             "http://www.ibtcfp.com ";
         const thankyou = "<br/><br/>Thank You! Have a great day!";
         const hireMe = "<br/><br/> Hire me: https://www.freelancer.in/u/Weborchid";
-
+        const scopeDocument = '<br/><br/> Once we connect, I will provide you "Scope of Work" document.';
 
         //START:Title
         let title = "";
@@ -100,15 +102,13 @@ class Current extends Component {
         //END:Title
 
         //Understanding
-        if (this.state.suffleUnderstanding.length >= understanding.length)
-        {
+        if (this.state.suffleUnderstanding.length >= understanding.length) {
             this.setState({suffleUnderstanding: ''});
         }
         let countUnderstanding = 0;
-        for (let i = 0; i < 200; i++){
+        for (let i = 0; i < 200; i++) {
             countUnderstanding = Math.floor(Math.random() * understanding.length);
-            if (!this.state.suffleUnderstanding.includes(countUnderstanding.toString()))
-            {
+            if (!this.state.suffleUnderstanding.includes(countUnderstanding.toString())) {
                 this.setState({suffleUnderstanding: this.state.suffleUnderstanding + countUnderstanding});
                 break;
             }
@@ -132,15 +132,13 @@ class Current extends Component {
         }
 
         //Revert
-        if (this.state.shuffleRevert.length >= revert.length)
-        {
+        if (this.state.shuffleRevert.length >= revert.length) {
             this.setState({shuffleRevert: ''});
         }
         let countRevert = 0;
-        for (let i = 0; i < 200; i++){
+        for (let i = 0; i < 200; i++) {
             countRevert = Math.floor(Math.random() * revert.length);
-            if (!this.state.shuffleRevert.includes(countRevert.toString()))
-            {
+            if (!this.state.shuffleRevert.includes(countRevert.toString())) {
                 this.setState({shuffleRevert: this.state.shuffleRevert + countRevert});
                 break;
             }
@@ -152,6 +150,11 @@ class Current extends Component {
             bidDeascription += portfolioLink;
         } else {
             bidDeascription += portfolio;
+        }
+
+        //Scope of document
+        if (this.state.chkScopeDoc) {
+            bidDeascription += scopeDocument;
         }
 
         //Tank You
@@ -278,7 +281,11 @@ class Current extends Component {
                                                        htmlFor="chkSimilar">Similar</label>
                                             </div>
                                         </div>
+
+
                                     </div>
+
+
 
 
                                     <div className="row">
@@ -321,7 +328,19 @@ class Current extends Component {
                                         </div>
                                     </div>
 
-
+                                    <div className="row">
+                                        <div className="col-md-6">
+                                            <div className="custom-control custom-checkbox mr-sm-2">
+                                                <input type="checkbox" className="custom-control-input" id="chkScopeDoc"
+                                                       name="chkScopeDoc"
+                                                       checked={this.state.chkScopeDoc}
+                                                       onChange={this.dataChange.bind(this)}
+                                                       value={this.state.chkScopeDoc}/>
+                                                <label className="custom-control-label"
+                                                       htmlFor="chkScopeDoc">Scope Doc.</label>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <p>
                                         <button type="submit" className="btn btn-info my-2">Generate</button>
                                     </p>
