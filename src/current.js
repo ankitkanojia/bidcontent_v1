@@ -21,6 +21,7 @@ class Current extends Component {
             suffleUnderstanding: '',
             shuffleRevert: '',
             chkScopeDoc: false,
+            chkAscii: false,
         };
     }
 
@@ -37,7 +38,16 @@ class Current extends Component {
     postData(ev) {
         //Form post HERE
         ev.preventDefault();
-        let bidDeascription = "Hello there,<br/>Greetings from Riowebs!";
+
+        let bidDeascription = "";
+
+        if(this.state.chkAscii){
+            bidDeascription = "⭐⭐⭐ Hello there! ⭐⭐⭐ <br/><br/> Greetings from Riowebs!";
+        }else{
+            bidDeascription = "Hello there,<br/>Greetings from Riowebs!";
+        }
+
+
         const understanding = [
             "<br/><br/>I have read all the requirements and SUMMARIZE further details related to your job.",
             "<br/><br/>I have read all the requirements and I am assured that I can complete your project on time and within your budget.",
@@ -329,6 +339,17 @@ class Current extends Component {
                                     </div>
 
                                     <div className="row">
+                                        <div className="col-md-4">
+                                            <div className="custom-control custom-checkbox mr-sm-2">
+                                                <input type="checkbox" className="custom-control-input" id="chkAscii"
+                                                       name="chkAscii"
+                                                       checked={this.state.chkAscii}
+                                                       onChange={this.dataChange.bind(this)}
+                                                       value={this.state.chkAscii}/>
+                                                <label className="custom-control-label"
+                                                       htmlFor="chkAscii">ASCII?</label>
+                                            </div>
+                                        </div>
                                         <div className="col-md-6">
                                             <div className="custom-control custom-checkbox mr-sm-2">
                                                 <input type="checkbox" className="custom-control-input" id="chkScopeDoc"

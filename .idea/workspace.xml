@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1ada14d0-0675-40e9-b1e6-dcaf045b6870" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="1ada14d0-0675-40e9-b1e6-dcaf045b6870" name="Default Changelist" comment=".">
       <change beforePath="$PROJECT_DIR$/src/current.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/current.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -19,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/current.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="344" column="109" lean-forward="true" selection-start-line="344" selection-start-column="109" selection-end-line="344" selection-end-column="109" />
+            <state relative-caret-position="314">
+              <caret line="45" column="14" lean-forward="true" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
                 <element signature="e#15188#18027#0" />
@@ -76,7 +75,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -199,12 +198,20 @@
       <workItem from="1557803967380" duration="733000" />
       <workItem from="1557896006358" duration="658000" />
       <workItem from="1561090970454" duration="577000" />
-      <workItem from="1562762332291" duration="537000" />
+      <workItem from="1562762332291" duration="856000" />
     </task>
+    <task id="LOCAL-00001" summary=".">
+      <created>1562762878378</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1562762878378</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47208000" />
+    <option name="totallyTimeSpent" value="47527000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -232,6 +239,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/index.css" />
@@ -330,8 +341,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/current.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="344" column="109" lean-forward="true" selection-start-line="344" selection-start-column="109" selection-end-line="344" selection-end-column="109" />
+        <state relative-caret-position="314">
+          <caret line="45" column="14" lean-forward="true" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
             <element signature="e#15188#18027#0" />
