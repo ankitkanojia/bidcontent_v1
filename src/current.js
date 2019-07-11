@@ -11,7 +11,6 @@ class Current extends Component {
         this.state = {
             resultdata: '',
             chkWebAppLogo: "1", //1=Web, 2=App, 3=Logo
-            chkSingleTeam: "1", //1=Single, 2=Team
             chkPortfolio: false,
             chkQuestion: false,
             chkWorkFlow: false,
@@ -20,8 +19,10 @@ class Current extends Component {
             chkHireMe: false,
             suffleUnderstanding: '',
             shuffleRevert: '',
-            chkScopeDoc: false,
+            chkScopeDoc: true,
             chkAscii: false,
+            chkTeam: false,
+            drpScope: "1"
         };
     }
 
@@ -31,9 +32,10 @@ class Current extends Component {
         } else {
             this.setState({[ev.target.name]: ev.target.value});
         }
+        console.log(ev.target.name);
+        console.log(ev.target.value);
 
     }
-
 
     postData(ev) {
         //Form post HERE
@@ -41,9 +43,9 @@ class Current extends Component {
 
         let bidDeascription = "";
 
-        if(this.state.chkAscii){
+        if (this.state.chkAscii) {
             bidDeascription = "⭐⭐⭐ Hello there! ⭐⭐⭐ <br/><br/> Greetings from Riowebs!";
-        }else{
+        } else {
             bidDeascription = "Hello there,<br/>Greetings from Riowebs!";
         }
 
@@ -82,7 +84,7 @@ class Current extends Component {
             "<br/><br/>Kindly give us an opportunity to work for you at our best."
         ];
 
-        const portfolio = " Please have a look at my Portfolio, <br/> \nhttps://www.freelancer.in/u/Weborchid"; //If you wish I can send you more work on your request.
+        const portfolio = "Please have a look at my Portfolio, <br/> \nhttps://www.freelancer.in/u/Weborchid"; //If you wish I can send you more work on your request.
         const portfolioLink = "<br/>Have a look at my recent work. If you wish I can send you more work on your request. <br/><br/>" +
             "https://www.avancedentalcare.com  <br/>" +
             "https://exam-preparation.com  <br/>" +
@@ -103,11 +105,21 @@ class Current extends Component {
         } else if (this.state.chkWebAppLogo === "3") {
             lookingFor = 'logo design';
         }
-        if (this.state.chkSingleTeam === "1") { //Single HERE
-            title = "<br/> <br/>You’re looking for a " + lookingFor + ", this is exactly what I specialize in. I have " + (this.state.chkWebAppLogo === "3" ? '5+' : '9+') + " years of experience in " + (this.state.chkWebAppLogo === "3" ? 'Graphics & Logo Design.' : 'the IT Sector.');
-        } else { //Team HERE
-            title = "<br/> <br/>You’re looking for a " + lookingFor + ", this is exactly what I specialize in. I have 9+ years of experience team of " + (this.state.chkWebAppLogo === "3" ? 'highly skilled Designers' : 'Adept Coders\'') + ".";
-        }
+
+       if(this.state.drpScope === "1"){
+           if (this.state.chkTeam) {
+               //Team HERE
+               title = "<br/> <br/>You’re looking for a " + lookingFor + ", this is exactly what I specialize in. I have 9+ years of experience team of " + (this.state.chkWebAppLogo === "3" ? 'highly skilled Designers' : 'Adept Coders\'') + ".";
+           } else {
+               //Single HERE
+               title = "<br/> <br/>You’re looking for a " + lookingFor + ", this is exactly what I specialize in. I have " + (this.state.chkWebAppLogo === "3" ? '5+' : '9+') + " years of experience in " + (this.state.chkWebAppLogo === "3" ? 'Graphics & Logo Design.' : 'the IT Sector.');
+           }
+       } else if(this.state.drpScope === "2"){
+           title = "<br/> <br/>I have " + (this.state.chkWebAppLogo === "3" ? '5+' : '9+') + " years of experience in " + (this.state.chkWebAppLogo === "3" ? 'Graphics & Logo Design,' : 'the IT Sector,') + " also I`ve achieved a preferred freelancer badge on my freelancer profile with a 5/5 star rating.";
+       }
+
+
+
         bidDeascription += title;
         //END:Title
 
@@ -232,28 +244,6 @@ class Current extends Component {
                                     </div>
 
                                     <div className="row">
-                                        <div className="col-md-4">
-                                            <FormGroup check>
-                                                <Label check>
-                                                    <Input type="radio" name="chkSingleTeam"
-                                                           value="1"
-                                                           onChange={this.dataChange.bind(this)}/>{' '} Single
-                                                </Label>
-                                            </FormGroup>
-                                        </div>
-                                        <div className="col-md-4">
-                                            <FormGroup check>
-                                                <Label check>
-                                                    <Input type="radio" name="chkSingleTeam"
-                                                           value="2"
-                                                           onChange={this.dataChange.bind(this)}/>{' '} Team
-                                                </Label>
-                                            </FormGroup>
-                                        </div>
-                                    </div>
-
-
-                                    <div className="row">
 
                                         <div className="col-md-4">
                                             <div className="custom-control custom-checkbox mr-sm-2">
@@ -294,8 +284,6 @@ class Current extends Component {
 
 
                                     </div>
-
-
 
 
                                     <div className="row">
@@ -350,7 +338,7 @@ class Current extends Component {
                                                        htmlFor="chkAscii">ASCII?</label>
                                             </div>
                                         </div>
-                                        <div className="col-md-6">
+                                        <div className="col-md-4">
                                             <div className="custom-control custom-checkbox mr-sm-2">
                                                 <input type="checkbox" className="custom-control-input" id="chkScopeDoc"
                                                        name="chkScopeDoc"
@@ -358,13 +346,42 @@ class Current extends Component {
                                                        onChange={this.dataChange.bind(this)}
                                                        value={this.state.chkScopeDoc}/>
                                                 <label className="custom-control-label"
-                                                       htmlFor="chkScopeDoc">Scope Doc.</label>
+                                                       htmlFor="chkScopeDoc">Scope</label>
+                                            </div>
+                                        </div>
+                                        <div className="col-md-4">
+                                            <div className="custom-control custom-checkbox mr-sm-2">
+                                                <input type="checkbox" className="custom-control-input" id="chkTeam"
+                                                       name="chkTeam"
+                                                       checked={this.state.chkTeam}
+                                                       onChange={this.dataChange.bind(this)}
+                                                       value={this.state.chkTeam}/>
+                                                <label className="custom-control-label"
+                                                       htmlFor="chkTeam">Team</label>
                                             </div>
                                         </div>
                                     </div>
-                                    <p>
-                                        <button type="submit" className="btn btn-info my-2">Generate</button>
-                                    </p>
+
+                                    <div className="row">
+                                        <div className="col-md-3">
+                                            <p>
+                                                <button type="submit" className="btn btn-danger btn-sm my-2">Generate...</button>
+                                            </p>
+                                        </div>
+                                        <div className="col-md-6">
+                                            <div className="pt-2 pl-3">
+                                                <select className="form-control-sm"
+                                                        id="drpScope"  name="drpScope"
+                                                        value={this.state.dataChange}
+                                                        onChange={this.dataChange.bind(this)}>
+                                                    <option value="1"> You're looking for a ... </option>
+                                                    <option value="2"> Freelancer profile intro ... </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
                                 </div>
 
                                 {/*Result Section*/}

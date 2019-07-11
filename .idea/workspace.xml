@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ada14d0-0675-40e9-b1e6-dcaf045b6870" name="Default Changelist" comment=".">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/current.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/current.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -18,11 +19,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/current.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="45" column="14" lean-forward="true" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
+            <state relative-caret-position="-105">
+              <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
-                <element signature="e#15188#18027#0" />
               </folding>
             </state>
           </provider>
@@ -54,6 +54,9 @@
       <find>fiverr</find>
       <find>hire</find>
       <find>chkHireMe</find>
+      <find>portfolio</find>
+      <find>single</find>
+      <find>chkSingleTeam</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -75,7 +78,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -198,7 +201,8 @@
       <workItem from="1557803967380" duration="733000" />
       <workItem from="1557896006358" duration="658000" />
       <workItem from="1561090970454" duration="577000" />
-      <workItem from="1562762332291" duration="856000" />
+      <workItem from="1562762332291" duration="1460000" />
+      <workItem from="1562818151719" duration="3036000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1562762878378</created>
@@ -211,13 +215,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47527000" />
+    <option name="totallyTimeSpent" value="51167000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14583333" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.14583333" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -341,11 +345,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/current.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="45" column="14" lean-forward="true" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
+        <state relative-caret-position="-105">
+          <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <element signature="e#15188#18027#0" />
           </folding>
         </state>
       </provider>
