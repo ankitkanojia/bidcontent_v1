@@ -84,7 +84,7 @@ class Current extends Component {
             "<br/><br/>Kindly give us an opportunity to work for you at our best."
         ];
 
-        const portfolio = "Please have a look at my Portfolio, <br/> \nhttps://www.freelancer.in/u/Weborchid"; //If you wish I can send you more work on your request.
+        const portfolio = " Please have a look at my Portfolio, <br/> \nhttps://www.freelancer.in/u/Weborchid"; //If you wish I can send you more work on your request.
         const portfolioLink = "<br/>Have a look at my recent work. If you wish I can send you more work on your request. <br/><br/>" +
             "https://www.avancedentalcare.com  <br/>" +
             "https://exam-preparation.com  <br/>" +
@@ -95,7 +95,7 @@ class Current extends Component {
             "http://www.ibtcfp.com ";
         const thankyou = "<br/><br/>Thank You! Have a great day!";
         const hireMe = "<br/><br/> Hire me: https://www.freelancer.in/u/Weborchid";
-        const scopeDocument = '<br/><br/> Once we connect, I will provide you "Scope of Work" document.';
+        const scopeDocument = '<br/><br/> Once we connect, I will provide you the "Scope of Work" document.';
 
         //START:Title
         let title = "";
