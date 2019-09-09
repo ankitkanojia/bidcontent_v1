@@ -2,6 +2,9 @@ import React, {Component} from 'react';
 import Header from './components/header';
 import {FormGroup, Label, Input} from 'reactstrap';
 
+import copy from 'copy-html-to-clipboard';
+
+
 
 class Current extends Component {
 
@@ -86,12 +89,13 @@ class Current extends Component {
 
         const portfolio = " Please have a look at my Portfolio, <br/> \nhttps://www.freelancer.in/u/Weborchid"; //If you wish I can send you more work on your request.
         const portfolioLink = "<br/>Have a look at my recent work. If you wish I can send you more work on your request. <br/><br/>" +
+            "https://walletly.tk  <br/>" +
+            "https://ibitcoin.herokuapp.com  <br/>" +
             "https://www.avancedentalcare.com  <br/>" +
             "https://exam-preparation.com  <br/>" +
             "https://www.vspaces.co <br/>" +
             "http://bosskinds.com <br/>" +
             "https://ayurvedoncall.com <br/>" +
-            "https://ibitcoin.herokuapp.com <br/>" +
             "http://www.ibtcfp.com ";
         const thankyou = "<br/><br/>Thank You! Have a great day!";
         const hireMe = "<br/><br/> Hire me: https://www.freelancer.in/u/Weborchid";
@@ -106,18 +110,17 @@ class Current extends Component {
             lookingFor = 'logo design';
         }
 
-       if(this.state.drpScope === "1"){
-           if (this.state.chkTeam) {
-               //Team HERE
-               title = "<br/> <br/>You’re looking for a " + lookingFor + ", this is exactly what I specialize in. I have 9+ years of experience team of " + (this.state.chkWebAppLogo === "3" ? 'highly skilled Designers' : 'Adept Coders\'') + ".";
-           } else {
-               //Single HERE
-               title = "<br/> <br/>You’re looking for a " + lookingFor + ", this is exactly what I specialize in. I have " + (this.state.chkWebAppLogo === "3" ? '5+' : '9+') + " years of experience in " + (this.state.chkWebAppLogo === "3" ? 'Graphics & Logo Design.' : 'the IT Sector.');
-           }
-       } else if(this.state.drpScope === "2"){
-           title = "<br/> <br/>I have " + (this.state.chkWebAppLogo === "3" ? '5+' : '9+') + " years of experience in " + (this.state.chkWebAppLogo === "3" ? 'Graphics & Logo Design,' : 'the IT Sector,') + " also I`ve achieved a preferred freelancer badge on my freelancer profile with a 5/5 star rating.";
-       }
-
+        if (this.state.drpScope === "1") {
+            if (this.state.chkTeam) {
+                //Team HERE
+                title = "<br/> <br/>You’re looking for a " + lookingFor + ", this is exactly what I specialize in. I have 9+ years of experience team of " + (this.state.chkWebAppLogo === "3" ? 'highly skilled Designers' : 'Adept Coders\'') + ".";
+            } else {
+                //Single HERE
+                title = "<br/> <br/>You’re looking for a " + lookingFor + ", this is exactly what I specialize in. I have " + (this.state.chkWebAppLogo === "3" ? '5+' : '9+') + " years of experience in " + (this.state.chkWebAppLogo === "3" ? 'Graphics & Logo Design.' : 'the IT Sector.');
+            }
+        } else if (this.state.drpScope === "2") {
+            title = "<br/> <br/>I have " + (this.state.chkWebAppLogo === "3" ? '5+' : '9+') + " years of experience in " + (this.state.chkWebAppLogo === "3" ? 'Graphics & Logo Design,' : 'the IT Sector,') + " also I`ve achieved a preferred freelancer badge on my freelancer profile with a 5/5 star rating.";
+        }
 
 
         bidDeascription += title;
@@ -193,6 +196,12 @@ class Current extends Component {
             //Replace Word
             bidDeascription = bidDeascription.replace('Freelancer', 'Fiverr')
         }
+
+        // Copy html
+        copy(bidDeascription, {
+            asHtml: true,
+        });
+
 
         this.setState({resultdata: bidDeascription});
     }
@@ -365,17 +374,19 @@ class Current extends Component {
                                     <div className="row">
                                         <div className="col-md-3">
                                             <p>
-                                                <button type="submit" className="btn btn-danger btn-sm my-2">Generate...</button>
+                                                <button type="submit"
+                                                        className="btn btn-danger btn-sm my-2">Generate...
+                                                </button>
                                             </p>
                                         </div>
                                         <div className="col-md-6">
                                             <div className="pt-2 pl-3">
                                                 <select className="form-control-sm"
-                                                        id="drpScope"  name="drpScope"
+                                                        id="drpScope" name="drpScope"
                                                         value={this.state.dataChange}
                                                         onChange={this.dataChange.bind(this)}>
-                                                    <option value="1"> You're looking for a ... </option>
-                                                    <option value="2"> Freelancer profile intro ... </option>
+                                                    <option value="1"> You're looking for a ...</option>
+                                                    <option value="2"> Freelancer profile intro ...</option>
                                                 </select>
                                             </div>
                                         </div>
